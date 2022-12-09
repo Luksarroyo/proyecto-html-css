@@ -25,6 +25,17 @@ body{
     display: flex;
     align-items: flex-end;
 }
+
+.menu-inicio__lista{
+    transition: all 2s;
+}
+
+.menu-inicio__lista:hover {
+    transform: scale(2);
+    translate: center;
+
+}
+
 a{
     font-size: 1.5rem;
     color: rgb(9, 115, 148);
@@ -42,6 +53,16 @@ h1{
     color: rgb(4, 4, 128);
     font-weight: bolder;
     margin: 10px 10px;
+    animation: ease-in titulo 3s;
+}
+
+@keyframes titulo{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 h2{
     font-size: 1rem;
@@ -60,12 +81,21 @@ ol li{
     text-decoration: none;
     list-style: none;
     color: rgb(9, 115, 148);
+    transition: 1s;
 }
+
+ol li:hover{
+    translate: 100px;
+    translate: 50%;
+    transform: scale(2);
+}
+
 .contacto {
     font-size: 1rem;
     color:rgb(90, 90, 230);
     font-weight: bolder;
 }
+
 
 .redes {
     font-size: 1rem;
@@ -116,10 +146,32 @@ ol li{
 .biblioteca__contenido{
 display: flex;
 justify-content: center;
-align-items: flex-end;
+align-items: flex-end; 
 background-color: beige;
-border-radius: 1px solid black;
+outline: 1px solid black;
+text-transform: uppercase;
+overflow: hidden;
+transition: 1s;
 }
+
+.biblioteca__contenido:hover{
+    color: beige;
+}
+
+.biblioteca__contenido::before{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    width: 150%;
+    height: 100%;
+    background-color: rgb(90, 90, 230) ;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    transition:all 1s;
+}
+
+
 
 /*main Hospital*/
 .main-hospital{
@@ -148,6 +200,12 @@ border-radius: 1px solid black;
     margin-top: 65px;
     background-color: rgb(241, 245, 242);
     border: 3px solid rgb(4, 4, 128);
+    transition: 1s;
+}
+
+.contenedor-principal__subtitulo:hover {
+    translate: 100px;
+    translate: 50%;
 }
 
 .turnos{
@@ -182,7 +240,11 @@ border-radius: 1px solid black;
     color: rgb(227, 228, 227);
     padding: 15px 15px;
     font-weight: bold;
+    transform: 2s;
+}
 
+.turnos-indice__enlace:hover{
+    transform: scale(1.5);
 }
 
 .contenedor-turnos__imagen{
