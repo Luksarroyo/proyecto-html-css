@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Caveat',cursive;
+    background-color: lightblue;
+}
+/*encabezado general a paginas*/
+.header-general{
+    background-image: url(../recursos/imagen/hospital\ png.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: rgb(241, 245, 242);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 20px;
+
+}
+
+.menu-inicio {
+    display: flex;
+    align-items: flex-end;
+}
+a{
+    font-size: 1.5rem;
+    color: rgb(9, 115, 148);
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 10px;
+}
+
+h1{
+    font-size: 2rem;
+    color: rgb(4, 4, 128);
+    font-weight: bolder;
+    margin: 10px 10px;
+}
+h2{
+    font-size: 1rem;
+    color: rgb(4, 4, 128);
+    margin: 10px 10px
+}
+
+/*footer general a paginas*/
+
+footer {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+ol li{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(9, 115, 148);
+}
+.contacto {
+    font-size: 1rem;
+    color:rgb(90, 90, 230);
+    font-weight: bolder;
+}
+
+.redes {
+    font-size: 1rem;
+    color:rgb(90, 90, 230);
+    font-weight: bolder;
+
+}
+.redes__lista {
+    padding: 20px;
+    margin: 10px;
+
+}
+
+/*main index*/
+
+.titulo-principal {
+    font-size: 2rem;
+    color:rgb(90, 90, 230);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.descripcion-principal__texto{
+    color: rgb(9, 115, 148);
+    font-size: 2rem;
+}
+
+.biblioteca {
+    height: 300px;
+    font-size: 2rem;
+    color:rgb(90, 90, 230);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    background-image: url("../recursos/imagen/biblioteca.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+}
+.biblioteca__contenido{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+background-color: beige;
+border-radius: 1px solid black;
+}
+
+/*main Hospital*/
+.main-hospital{
+    padding:0px 0px 100px 0px ;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor-principal__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: rgb(4, 4, 128) ;
+}
+
+.contenedor-principal__subtitulo {
+    display: flex;
+    justify-content: flex-start;  
+    width: 150px; 
+    justify-content: center; 
+    margin-right: 100px;
+    margin-top: 65px;
+    background-color: rgb(241, 245, 242);
+    border: 3px solid rgb(4, 4, 128);
+}
+
+.turnos{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(227, 228, 227);
+    margin-bottom: 50px;
+
+}
+.turnos-indice__titulo{
+    font-size: 3rem;
+    color: rgb(4, 4, 128);
+    margin: 10px 10px
+    
+}
+
+.turnos-indice__subtitulo{
+    color: rgb(9, 115, 148);
+    font-size: 2rem;
+    
+    
+}   
+
+.turnos-indice__enlace{
+    margin-left: 400px;
+    margin-block-end: 10px;
+    background-color: rgb(9, 115, 148) ;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(227, 228, 227);
+    padding: 15px 15px;
+    font-weight: bold;
+
+}
+
+.contenedor-turnos__imagen{
+    display: inline-block;
+    justify-content: right;
+    height: 200px;
+    width: 500px;
+    
+}
+
+/*propaganda generl*/
+.titulo-articulos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.titulo-articulos__imagen{
+    display: flex;
+    justify-content: center;
+    
+}
+.titulo-articulos_enlace{
+    width: 160px;
+  height: 10px;
+  padding: 30px;
+  margin: 20px 0 0 110px;
+  border: 8px solid rgb(4, 4, 128);
+  background: rgb(227, 228, 227);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+/*main biblioteca*/
+.header-biblioteca{
+    background-image: url(../recursos/imagen/hospital\ png.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: rgb(241, 245, 242);
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+
+}
+
+.libros {
+    margin: 60px;
+    padding: 0 20px;
+}
+
+.libros__contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.libros__titulo {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: rgb(241, 245, 242);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgb(4, 4, 128);
+    
+}
+
+.tarjeta__enlace {
+    background-color: rgb(9, 115, 148);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(4, 4, 128) ;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.tarjeta__descripcion {
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.tarjeta__titulo {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.tarjeta__encabezado-imagen {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tarjeta__encabezado {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+/*index.html*/ 
+/*header*/   
+.header-general {
+    width: 100%;
+    flex-direction: column;
+
+}
+.menu-inicio {
+    margin-top: 30px;
+}
+
+/*main index*/
+.descripcion-principal {
+flex-direction: column;
+}
+.titulo-articulos {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.biblioteca{
+    height: 150px;
+}
+/*bilbioteca.html*/
+/*header*/
+.header-biblioteca {
+flex-direction: column;
+}
+
+
+
+/*main*/
+.libros__contenido {
+display: flex;
+flex-direction: column;
+}
+
+/*Hospital.html*/
+/*main*/
+
+.turnos{
+flex-direction: column;
+}
+
+.contenedor-turnos__imagen {
+height: 100px;
+width: 400px; 
+}
+
+.turnos-indice__enlace {
+margin-left: 200px;
+}
+}
+
+@media (max-width: 576px) {
+/*index.html*/ 
+/*header*/   
+.header-general {
+    width: 100%;
+    flex-direction: column;
+
+}
+.menu-inicio {
+    margin-top: 30px;
+}
+
+/*main index*/
+.descripcion-principal {
+flex-direction: column;
+}
+.titulo-articulos {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.biblioteca{
+    height: 150px;
+}
+
+/*bilbioteca.html*/
+/*header*/
+.header-biblioteca {
+flex-direction: column;
+}
+
+/*main*/
+.libros__contenido {
+display: flex;
+flex-direction: column;
+}
+
+/*Hospital.html*/
+/*main*/
+
+.turnos{
+flex-direction: column;
+}
+
+.contenedor-turnos__imagen {
+height: 100px;
+width: 400px; 
+}
+
+.turnos-indice__enlace {
+margin-left: 200px;
+}
+}
