@@ -26,7 +26,7 @@ body{
     align-items: flex-end;
 }
 
-.menu-inicio__lista{
+/*.menu-inicio__lista{
     transition: all 2s;
 }
 
@@ -34,7 +34,7 @@ body{
     transform: scale(2);
     translate: center;
 
-}
+}*/
 
 a{
     font-size: 1.5rem;
@@ -114,6 +114,7 @@ ol li:hover{
 .titulo-principal {
     font-size: 2rem;
     color:rgb(90, 90, 230);
+    margin: 30px;
     font-weight: bolder;
     display: flex;
     justify-content: center;
@@ -151,11 +152,12 @@ background-color: beige;
 outline: 1px solid black;
 text-transform: uppercase;
 overflow: hidden;
-transition: 1s;
+transition: 3s;
 }
 
 .biblioteca__contenido:hover{
-    color: beige;
+    color: white;
+    background-color: rgb(4, 4, 128);
 }
 
 .biblioteca__contenido::before{
@@ -305,6 +307,7 @@ transition: 1s;
 }
 
 .libros__titulo {
+    color: rgb(4, 4, 128);
     margin-bottom: 40px;
     text-align: center;
     font-size: 30px;
@@ -350,6 +353,35 @@ transition: 1s;
     position: relative;
 }
 
+.tarjeta-uno{
+    transform:translate(100px);
+    transition: 2s;
+}
+
+.tarjeta-uno:hover {
+    transform: translate(-50px);
+}
+
+.tarjeta-dos{
+    transform: perspective(200px);
+    transition: 2s;
+}
+
+.tarjeta-dos:hover {
+    transform: translate(-100px);
+}
+
+.tarjeta-tres {
+    transform: translate(-100px);
+    transition: 2s;
+}
+
+.tarjeta-tres:hover {
+    transform: translate(50px);
+}
+
+
+
 @media (max-width: 768px) {
 /*index.html*/ 
 /*header*/   
@@ -379,8 +411,30 @@ align-items: center;
 .header-biblioteca {
 flex-direction: column;
 }
+/*tarjetas*/
+.tarjeta-uno{
+    transform: none;
+}
 
+.tarjeta-uno:hover {
+    transform:none;
+}
 
+.tarjeta-dos {
+    transform:none;
+}
+
+.tarjeta-dos:hover {
+    transform: none
+}
+
+.tarjeta-tres {
+    transform:none
+}
+
+.tarjeta-tres:hover {
+    transform:none;
+}
 
 /*main*/
 .libros__contenido {
@@ -456,5 +510,4 @@ width: 400px;
 
 .turnos-indice__enlace {
 margin-left: 200px;
-}
 }
