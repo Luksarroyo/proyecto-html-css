@@ -17,8 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: sticky;
-    top: 20px;
-
+    top: 0px;
 }
 
 .menu-inicio {
@@ -242,11 +241,12 @@ transition: 3s;
     color: rgb(227, 228, 227);
     padding: 15px 15px;
     font-weight: bold;
-    transform: 2s;
+    transform: 3s;
 }
 
 .turnos-indice__enlace:hover{
-    transform: scale(1.5);
+    background-color:rgb(227, 228, 227);
+    color: rgb(9, 115, 148);    
 }
 
 .contenedor-turnos__imagen{
@@ -257,8 +257,18 @@ transition: 3s;
     
 }
 
+.novedades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
 /*propaganda generl*/
 .titulo-articulos{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
