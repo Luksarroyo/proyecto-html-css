@@ -1,0 +1,23 @@
+{
+  "name": "hospitalsalud",
+  "version": "1.0.0",
+  "description": "proyect final",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luksarroyo/segunda-entrega-arroyo.git"
+  },
+  "author": "Lucas Arroyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luksarroyo/segunda-entrega-arroyo/issues"
+  },
+  "homepage": "https://github.com/Luksarroyo/segunda-entrega-arroyo#readme"
+}

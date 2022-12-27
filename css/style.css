@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: sticky;
-    top: 0px;
+    padding: 20px;
 }
 
 .menu-inicio {
@@ -46,7 +46,7 @@ ul li {
     display: inline;
     margin: 0px 10px;
 }
-
+/*titulos generales*/
 h1{
     font-size: 2rem;
     color: rgb(4, 4, 128);
@@ -54,7 +54,14 @@ h1{
     margin: 10px 10px;
     animation: ease-in titulo 3s;
 }
+.titulogeneral-hospital{
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: rgb(9, 115, 148);
+    margin: 20px 10px;
+    animation: ease-in titulo 3s;
 
+}
 @keyframes titulo{
     0%{
         transform: scale(0);
@@ -397,16 +404,24 @@ transition: 3s;
 /*header*/   
 .header-general {
     width: 100%;
+    height: 100%;
     flex-direction: column;
 
 }
 .menu-inicio {
     margin-top: 30px;
 }
+ul li {
+    list-style: none;
+    display: block;
+}
 
 /*main index*/
 .descripcion-principal {
 flex-direction: column;
+}
+.descripcion-principal__texto{
+    font-size: 1rem;
 }
 .titulo-articulos {
 display: flex;
@@ -467,15 +482,37 @@ width: 400px;
 .turnos-indice__enlace {
 margin-left: 200px;
 }
+/*propaganmda general*/
+.titulo-articulos__imagen{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 400px;
+   
+}
+/*main universidad*/
+/*tarjeta*/
+
+/*footer general*/
+footer {
+    display: flex;
+    display: block;
+    margin-top: 100px;
+}
 }
 
 @media (max-width: 576px) {
 /*index.html*/ 
 /*header*/   
 .header-general {
-    width: 100%;
+    width:auto;
+    height: 100%;
     flex-direction: column;
 
+}
+.header-titulo{
+    display: flex;
+    display: block;
 }
 .menu-inicio {
     margin-top: 30px;
@@ -484,6 +521,9 @@ margin-left: 200px;
 /*main index*/
 .descripcion-principal {
 flex-direction: column;
+}
+.descripcion-principal__video{
+
 }
 .titulo-articulos {
 display: flex;
