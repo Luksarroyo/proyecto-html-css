@@ -1,0 +1,70 @@
+/*main index*/
+
+.titulo-principal {
+    font-size: 2rem;
+    color:$fontBlue;
+    margin: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion-principal {
+    display: flex;
+    justify-content: space-between;
+
+    &__texto {
+        color: $fontBlue;
+        font-size: 2rem;
+    }
+}
+
+.biblioteca {
+    height: 300px;
+    font-size: 2rem;
+    color:$fontBlue;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    background-image: url("../recursos/imagen/biblioteca.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+
+    &__contenido {
+        display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    background-color: beige;
+    outline: 1px solid black;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 3s;
+
+        &:hover{
+            color: $fontWhite;
+            background-color: $fontDarkblur;
+        }
+
+        &::before{
+            position: absolute;
+            top: 0;
+            left: -50px;
+            z-index: -1;
+            width: 150%;
+            height: 100%;
+            background-color: $fontBlue ;
+            transform: scaleX(0) skewX(35deg);
+            transform-origin: left;
+            transition:all 1s;
+        }
+
+    }
+}
+
+
+.titulo-digital {
+    color:$fontBlue ;
+    font-size: 1.5rem;
+}

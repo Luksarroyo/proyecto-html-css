@@ -1,0 +1,184 @@
+
+@media (max-width: 768px) {
+/*index.html*/ 
+/*header*/   
+.header-general {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+}
+.menu-inicio {
+    margin-top: 30px;
+}
+ul li {
+    list-style: none;
+    display: block;
+}
+
+/*main index*/
+.descripcion-principal {
+flex-direction: column;
+}
+.descripcion-principal__texto{
+    font-size: 1rem;
+}
+.titulo-articulos {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.biblioteca{
+    height: 150px;
+}
+
+/*bilbioteca.html*/
+/*header*/
+.header-biblioteca {
+flex-direction: column;
+}
+/*tarjetas*/
+.tarjeta-uno{
+    transform: none;
+}
+
+.tarjeta-uno:hover {
+    transform:none;
+}
+
+.tarjeta-dos {
+    transform:none;
+}
+
+.tarjeta-dos:hover {
+    transform: none
+}
+
+.tarjeta-tres {
+    transform:none
+}
+
+.tarjeta-tres:hover {
+    transform:none;
+}
+
+/*main*/
+.libros__contenido {
+display: flex;
+flex-direction: column;
+}
+
+/*Hospital.html*/
+/*main*/
+
+.turnos{
+flex-direction: column;
+}
+
+.contenedor-turnos__imagen {
+height: 100px;
+width: 400px; 
+}
+
+.turnos-indice__enlace {
+margin-left: 200px;
+}
+/*propaganmda general*/
+.titulo-articulos__imagen{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 400px;
+   
+}
+/*universidad.html*/
+/*main*/
+.informacion{
+    width: 100px;
+    height: 100px;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+}
+/*video*/
+.video-universidad {
+width: auto;
+}
+
+/*footer general*/
+footer {
+    display: flex;
+    display: block;
+    margin-top: 100px;
+}
+}
+
+@media (max-width: 576px) {
+/*index.html*/ 
+/*header*/   
+.header-general {
+    width:auto;
+    height: 100%;
+    flex-direction: column;
+
+}
+.header-titulo{
+    display: flex;
+    display: block;
+}
+.menu-inicio {
+    margin-top: 30px;
+}
+
+/*main index*/
+.descripcion-principal {
+flex-direction: column;
+}
+/*.descripcion-principal__video {
+
+}*/
+.titulo-articulos {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.biblioteca{
+    height: 150px;
+}
+
+/*bilbioteca.html*/
+/*header*/
+.header-biblioteca {
+flex-direction: column;
+}
+
+/*main*/
+.libros__contenido {
+display: flex;
+flex-direction: column;
+}
+
+/*Hospital.html*/
+/*main*/
+
+.turnos{
+flex-direction: column;
+}
+
+.contenedor-turnos__imagen {
+height: 100px;
+width: 400px; 
+}
+
+.turnos-indice__enlace {
+    margin-left: 200px;
+}
+
+/*universidad.html*/
+/*main*/
+.novedades{
+    flex-direction: colum;
+}
+}

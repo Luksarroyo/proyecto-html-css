@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Caveat',cursive;
+    background-color: lightblue;
+}
+/*encabezado general a paginas*/
+.header-general{
+    background-image: url(../recursos/imagen/hospital.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: $fontWhite;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 20px;
+}
+
+.menu-inicio {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+a{
+    font-size: 1.5rem;
+    color: $fontBlue;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 10px;
+}
+/*titulos generales*/
+h1{
+    font-size: 2rem;
+    color: $fontDarkblur;
+    font-weight: bolder;
+    margin: 10px 10px;
+    animation: ease-in titulo 3s;
+}
+.titulogeneral-hospital{
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: $fontBlue;
+    margin: 20px 10px;
+    animation: ease-in titulo 3s;
+
+}
+@keyframes titulo{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+h2{
+    font-size: 1rem;
+    color: $fontDarkblur;
+    margin: 10px 10px;
+}
+
+/*footer general a paginas*/
+
+footer {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+ol li{
+    text-decoration: none;
+    list-style: none;
+    color: $fontBlue;
+    transition: 1s;
+}
+
+ol li:hover{
+    translate: 100px;
+    translate: 50%;
+    transform: scale(2);
+}
+
+.contacto {
+    @extend .social;
+}
+
+.redes {
+    @extend .social;
+
+    &__lista {
+        padding: 20px;
+        margin: 10px;
+    }
+
+}
+
+/*propaganda general*/
+.titulo-articulos{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__imagen{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &_enlace{
+        width: 160px;
+      height: 10px;
+      padding: 30px;
+      margin: 20px 0 0 110px;
+      border: 8px solid $fontDarkblur;
+      background: $fontWhite;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+}
+
+.social{
+    font-size: 1rem;
+    color:$fontBlue;
+    font-weight: bolder;
+}

@@ -1,0 +1,94 @@
+/*main Hospital*/
+.main-hospital{
+    padding:0px 0px 100px 0px ;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: space-between;
+
+    &__titulo{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        color: $fontDarkblur ;
+    }
+
+    &__subtitulo {
+        display: flex;
+        justify-content: flex-start;  
+        width: 150px; 
+        justify-content: center; 
+        margin-right: 100px;
+        margin-top: 65px;
+        background-color: $fontWhite;
+        border: 3px solid $fontDarkblur;
+        transition: 1s;
+
+        &:hover {
+            translate: 100px;
+            translate: 50%;
+        }
+    }
+}
+
+.turnos{
+    display: flex;
+    justify-content: space-between;
+    background-color: $fontWhite;
+    margin-bottom: 50px;
+
+    &-indice{
+
+        &__titulo{
+            font-size: 3rem;
+            color: $fontDarkblur;
+            margin: 10px 10px;
+            
+        }
+        
+        &__subtitulo{
+            color: $fontBlue;
+            font-size: 2rem;
+        } 
+        
+        &__enlace{
+            margin-left: 400px;
+            margin-block-end: 10px;
+            background-color: $fontBlue;
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            color: $fontWhite;
+            padding: 15px 15px;
+            font-weight: bold;
+            transform: 3s;
+
+            &:hover{
+                background-color:$fontWhite;
+                color: $fontBlue;    
+            }
+        }
+    }
+
+}
+
+.contenedor-turnos__imagen{
+    display: inline-block;
+    justify-content: right;
+    height: 200px;
+    width: 500px;
+    
+}
+
+.novedades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+

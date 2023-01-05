@@ -1,571 +1,427 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*variables*/
+/*colores*/
+/*contenido global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-body{
-    font-family: 'Caveat',cursive;
-    background-color: lightblue;
-}
+body {
+  font-family: 'Caveat',cursive;
+  background-color: lightblue; }
+
 /*encabezado general a paginas*/
-.header-general{
-    background-image: url(../recursos/imagen/hospital\ png.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-color: rgb(241, 245, 242);
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    padding: 20px;
-}
+.header-general {
+  background-image: url(../recursos/imagen/hospital.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f1f5f2;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 20px; }
 
 .menu-inicio {
-    display: flex;
-    align-items: flex-end;
-}
+  display: flex;
+  align-items: flex-end; }
 
-/*.menu-inicio__lista{
-    transition: all 2s;
-}
-
-.menu-inicio__lista:hover {
-    transform: scale(2);
-    translate: center;
-
-}*/
-
-a{
-    font-size: 1.5rem;
-    color: rgb(9, 115, 148);
-    text-decoration: none;
-}
+a {
+  font-size: 1.5rem;
+  color: #097394;
+  text-decoration: none; }
 
 ul li {
-    list-style: none;
-    display: inline;
-    margin: 0px 10px;
-}
-/*titulos generales*/
-h1{
-    font-size: 2rem;
-    color: rgb(4, 4, 128);
-    font-weight: bolder;
-    margin: 10px 10px;
-    animation: ease-in titulo 3s;
-}
-.titulogeneral-hospital{
-    font-size: 2rem;
-    color: whitesmoke;
-    background-color: rgb(9, 115, 148);
-    margin: 20px 10px;
-    animation: ease-in titulo 3s;
+  list-style: none;
+  display: inline;
+  margin: 0px 10px; }
 
-}
-@keyframes titulo{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-h2{
-    font-size: 1rem;
-    color: rgb(4, 4, 128);
-    margin: 10px 10px
-}
+/*titulos generales*/
+h1 {
+  font-size: 2rem;
+  color: #040480;
+  font-weight: bolder;
+  margin: 10px 10px;
+  animation: ease-in titulo 3s; }
+
+.titulogeneral-hospital {
+  font-size: 2rem;
+  color: whitesmoke;
+  background-color: #097394;
+  margin: 20px 10px;
+  animation: ease-in titulo 3s; }
+
+@keyframes titulo {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+h2 {
+  font-size: 1rem;
+  color: #040480;
+  margin: 10px 10px; }
 
 /*footer general a paginas*/
-
 footer {
-    display: flex;
-    justify-content:space-between;
-    margin-top: 100px;
-}
-ol li{
-    text-decoration: none;
-    list-style: none;
-    color: rgb(9, 115, 148);
-    transition: 1s;
-}
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px; }
 
-ol li:hover{
-    translate: 100px;
-    translate: 50%;
-    transform: scale(2);
-}
+ol li {
+  text-decoration: none;
+  list-style: none;
+  color: #097394;
+  transition: 1s; }
 
-.contacto {
-    font-size: 1rem;
-    color:rgb(90, 90, 230);
-    font-weight: bolder;
-}
+ol li:hover {
+  translate: 100px;
+  translate: 50%;
+  transform: scale(2); }
 
-
-.redes {
-    font-size: 1rem;
-    color:rgb(90, 90, 230);
-    font-weight: bolder;
-
-}
 .redes__lista {
-    padding: 20px;
-    margin: 10px;
+  padding: 20px;
+  margin: 10px; }
 
-}
-
-/*main index*/
-
-.titulo-principal {
-    font-size: 2rem;
-    color:rgb(90, 90, 230);
-    margin: 30px;
-    font-weight: bolder;
+/*propaganda general*/
+.titulo-articulos {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .titulo-articulos__imagen {
+    display: flex;
+    justify-content: center; }
+  .titulo-articulos_enlace {
+    width: 160px;
+    height: 10px;
+    padding: 30px;
+    margin: 20px 0 0 110px;
+    border: 8px solid #040480;
+    background: #f1f5f2;
     display: flex;
     justify-content: center;
-}
+    align-items: center; }
+
+.social, .contacto, .redes {
+  font-size: 1rem;
+  color: #097394;
+  font-weight: bolder; }
+
+/*index*/
+/*main index*/
+.titulo-principal {
+  font-size: 2rem;
+  color: #097394;
+  margin: 30px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center; }
 
 .descripcion-principal {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.descripcion-principal__texto{
-    color: rgb(9, 115, 148);
-    font-size: 2rem;
-}
+  display: flex;
+  justify-content: space-between; }
+  .descripcion-principal__texto {
+    color: #097394;
+    font-size: 2rem; }
 
 .biblioteca {
-    height: 300px;
-    font-size: 2rem;
-    color:rgb(90, 90, 230);
-    font-weight: bolder;
+  height: 300px;
+  font-size: 2rem;
+  color: #097394;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  background-image: url("../recursos/imagen/biblioteca.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px; }
+  .biblioteca__contenido {
     display: flex;
     justify-content: center;
-    background-image: url("../recursos/imagen/biblioteca.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 20px;
-}
-.biblioteca__contenido{
-display: flex;
-justify-content: center;
-align-items: flex-end; 
-background-color: beige;
-outline: 1px solid black;
-text-transform: uppercase;
-overflow: hidden;
-transition: 3s;
-}
-
-.biblioteca__contenido:hover{
-    color: white;
-    background-color: rgb(4, 4, 128);
-}
-
-.biblioteca__contenido::before{
-    position: absolute;
-    top: 0;
-    left: -50px;
-    z-index: -1;
-    width: 150%;
-    height: 100%;
-    background-color: rgb(90, 90, 230) ;
-    transform: scaleX(0) skewX(35deg);
-    transform-origin: left;
-    transition:all 1s;
-}
+    align-items: flex-end;
+    background-color: beige;
+    outline: 1px solid black;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 3s; }
+    .biblioteca__contenido:hover {
+      color: #f1f5f2;
+      background-color: #040480; }
+    .biblioteca__contenido::before {
+      position: absolute;
+      top: 0;
+      left: -50px;
+      z-index: -1;
+      width: 150%;
+      height: 100%;
+      background-color: #097394;
+      transform: scaleX(0) skewX(35deg);
+      transform-origin: left;
+      transition: all 1s; }
 
 .titulo-digital {
-    color:rgb(90, 90, 230) ;
-    font-size: 1.5rem;
-}
+  color: #097394;
+  font-size: 1.5rem; }
 
+/*biblioteca*/
+/*main biblioteca*/
+.header-biblioteca {
+  background-image: url(../recursos/imagen/hospital.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f1f5f2;
+  display: flex;
+  justify-content: space-between;
+  top: 20px; }
 
+.libros {
+  margin: 60px;
+  padding: 0 20px; }
+  .libros__contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto; }
+  .libros__titulo {
+    color: #040480;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px; }
+
+.libros .tarjeta {
+  background-color: #f1f5f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px #040480; }
+  .libros .tarjeta__enlace {
+    background-color: lightblue;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    color: #040480;
+    padding: 15px 0;
+    font-weight: bold; }
+  .libros .tarjeta__descripcion {
+    height: 50px;
+    margin-bottom: 40px; }
+  .libros .tarjeta__titulo {
+    margin-bottom: 20px;
+    font-size: 20px; }
+
+.tarjeta__encabezado {
+  position: relative; }
+  .tarjeta__encabezado-imagen {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; }
+
+.tarjeta-uno {
+  transform: translate(100px);
+  transition: 2s; }
+  .tarjeta-uno:hover {
+    transform: translate(-50px); }
+
+.tarjeta-dos {
+  transform: perspective(200px);
+  transition: 2s; }
+  .tarjeta-dos:hover {
+    transform: translate(-100px); }
+
+.tarjeta-tres {
+  transform: translate(-100px);
+  transition: 2s; }
+  .tarjeta-tres:hover {
+    transform: translate(50px); }
+
+/*hospital*/
 /*main Hospital*/
-.main-hospital{
-    padding:0px 0px 100px 0px ;
-}
+.main-hospital {
+  padding: 0px 0px 100px 0px; }
 
-.contenedor-principal{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.contenedor-principal__titulo{
+.contenedor-principal {
+  display: flex;
+  justify-content: space-between; }
+  .contenedor-principal__titulo {
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    color: rgb(4, 4, 128) ;
-}
-
-.contenedor-principal__subtitulo {
+    color: #040480; }
+  .contenedor-principal__subtitulo {
     display: flex;
-    justify-content: flex-start;  
-    width: 150px; 
-    justify-content: center; 
+    justify-content: flex-start;
+    width: 150px;
+    justify-content: center;
     margin-right: 100px;
     margin-top: 65px;
-    background-color: rgb(241, 245, 242);
-    border: 3px solid rgb(4, 4, 128);
-    transition: 1s;
-}
+    background-color: #f1f5f2;
+    border: 3px solid #040480;
+    transition: 1s; }
+    .contenedor-principal__subtitulo:hover {
+      translate: 100px;
+      translate: 50%; }
 
-.contenedor-principal__subtitulo:hover {
-    translate: 100px;
-    translate: 50%;
-}
-
-.turnos{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(227, 228, 227);
-    margin-bottom: 50px;
-
-}
-.turnos-indice__titulo{
+.turnos {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f5f2;
+  margin-bottom: 50px; }
+  .turnos-indice__titulo {
     font-size: 3rem;
-    color: rgb(4, 4, 128);
-    margin: 10px 10px
-    
-}
-
-.turnos-indice__subtitulo{
-    color: rgb(9, 115, 148);
-    font-size: 2rem;
-    
-    
-}   
-
-.turnos-indice__enlace{
+    color: #040480;
+    margin: 10px 10px; }
+  .turnos-indice__subtitulo {
+    color: #097394;
+    font-size: 2rem; }
+  .turnos-indice__enlace {
     margin-left: 400px;
     margin-block-end: 10px;
-    background-color: rgb(9, 115, 148) ;
+    background-color: #097394;
     width: 200px;
     display: inline-block;
     text-align: center;
     border-radius: 10px;
-    color: rgb(227, 228, 227);
+    color: #f1f5f2;
     padding: 15px 15px;
     font-weight: bold;
-    transform: 3s;
-}
-
-.turnos-indice__enlace:hover{
-    background-color:rgb(227, 228, 227);
-    color: rgb(9, 115, 148);    
-}
-
-.contenedor-turnos__imagen{
-    display: inline-block;
-    justify-content: right;
-    height: 200px;
-    width: 500px;
-    
-}
-
-.novedades{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-
-/*propaganda generl*/
-.titulo-articulos{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-}
-
-.titulo-articulos__imagen{
-    display: flex;
-    justify-content: center;
-    
-}
-.titulo-articulos_enlace{
-    width: 160px;
-  height: 10px;
-  padding: 30px;
-  margin: 20px 0 0 110px;
-  border: 8px solid rgb(4, 4, 128);
-  background: rgb(227, 228, 227);
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-
-/*main biblioteca*/
-.header-biblioteca{
-    background-image: url(../recursos/imagen/hospital\ png.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-color: rgb(241, 245, 242);
-    display: flex;
-    justify-content: space-between;
-    top: 20px;
-
-}
-
-.libros {
-    margin: 60px;
-    padding: 0 20px;
-}
-
-.libros__contenido {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.libros__titulo {
-    color: rgb(4, 4, 128);
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 30px;
-}
-
-/* TARJETAS */
-.tarjeta {
-    background-color: rgb(241, 245, 242);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 25px 50px -12px rgb(4, 4, 128);
-    
-}
-
-.tarjeta__enlace {
-    background-color: rgb(9, 115, 148);
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    border-radius: 10px;
-    color: rgb(4, 4, 128) ;
-    padding: 15px 0;
-    font-weight: bold;
-}
-
-.tarjeta__descripcion {
-    height: 50px;
-    margin-bottom: 40px;
-}
-
-.tarjeta__titulo {
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.tarjeta__encabezado-imagen {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.tarjeta__encabezado {
-    position: relative;
-}
-
-.tarjeta-uno{
-    transform:translate(100px);
-    transition: 2s;
-}
-
-.tarjeta-uno:hover {
-    transform: translate(-50px);
-}
-
-.tarjeta-dos{
-    transform: perspective(200px);
-    transition: 2s;
-}
-
-.tarjeta-dos:hover {
-    transform: translate(-100px);
-}
-
-.tarjeta-tres {
-    transform: translate(-100px);
-    transition: 2s;
-}
-
-.tarjeta-tres:hover {
-    transform: translate(50px);
-}
-
-
-
-@media (max-width: 768px) {
-/*index.html*/ 
-/*header*/   
-.header-general {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-
-}
-.menu-inicio {
-    margin-top: 30px;
-}
-ul li {
-    list-style: none;
-    display: block;
-}
-
-/*main index*/
-.descripcion-principal {
-flex-direction: column;
-}
-.descripcion-principal__texto{
-    font-size: 1rem;
-}
-.titulo-articulos {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.biblioteca{
-    height: 150px;
-}
-
-/*bilbioteca.html*/
-/*header*/
-.header-biblioteca {
-flex-direction: column;
-}
-/*tarjetas*/
-.tarjeta-uno{
-    transform: none;
-}
-
-.tarjeta-uno:hover {
-    transform:none;
-}
-
-.tarjeta-dos {
-    transform:none;
-}
-
-.tarjeta-dos:hover {
-    transform: none
-}
-
-.tarjeta-tres {
-    transform:none
-}
-
-.tarjeta-tres:hover {
-    transform:none;
-}
-
-/*main*/
-.libros__contenido {
-display: flex;
-flex-direction: column;
-}
-
-/*Hospital.html*/
-/*main*/
-
-.turnos{
-flex-direction: column;
-}
+    transform: 3s; }
+    .turnos-indice__enlace:hover {
+      background-color: #f1f5f2;
+      color: #097394; }
 
 .contenedor-turnos__imagen {
-height: 100px;
-width: 400px; 
-}
+  display: inline-block;
+  justify-content: right;
+  height: 200px;
+  width: 500px; }
 
-.turnos-indice__enlace {
-margin-left: 200px;
-}
-/*propaganmda general*/
-.titulo-articulos__imagen{
+.novedades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/*contenido temporal*/
+@media (max-width: 768px) {
+  /*index.html*/
+  /*header*/
+  .header-general {
+    width: 100%;
+    height: 100%;
+    flex-direction: column; }
+  .menu-inicio {
+    margin-top: 30px; }
+  ul li {
+    list-style: none;
+    display: block; }
+  /*main index*/
+  .descripcion-principal {
+    flex-direction: column; }
+  .descripcion-principal__texto {
+    font-size: 1rem; }
+  .titulo-articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .biblioteca {
+    height: 150px; }
+  /*bilbioteca.html*/
+  /*header*/
+  .header-biblioteca {
+    flex-direction: column; }
+  /*tarjetas*/
+  .tarjeta-uno {
+    transform: none; }
+  .tarjeta-uno:hover {
+    transform: none; }
+  .tarjeta-dos {
+    transform: none; }
+  .tarjeta-dos:hover {
+    transform: none; }
+  .tarjeta-tres {
+    transform: none; }
+  .tarjeta-tres:hover {
+    transform: none; }
+  /*main*/
+  .libros__contenido {
+    display: flex;
+    flex-direction: column; }
+  /*Hospital.html*/
+  /*main*/
+  .turnos {
+    flex-direction: column; }
+  .contenedor-turnos__imagen {
+    height: 100px;
+    width: 400px; }
+  .turnos-indice__enlace {
+    margin-left: 200px; }
+  /*propaganmda general*/
+  .titulo-articulos__imagen {
     display: flex;
     justify-content: center;
     height: 100px;
-    width: 400px;
-   
-}
-/*main universidad*/
-/*video*/
-.video-universidad {
-width: auto;
-}
-
-/*footer general*/
-footer {
+    width: 400px; }
+  /*universidad.html*/
+  /*main*/
+  .informacion {
+    width: 100px;
+    height: 100px; }
+  .novedades {
+    display: flex;
+    flex-direction: column; }
+  /*video*/
+  .video-universidad {
+    width: auto; }
+  /*footer general*/
+  footer {
     display: flex;
     display: block;
-    margin-top: 100px;
-}
-}
+    margin-top: 100px; } }
 
 @media (max-width: 576px) {
-/*index.html*/ 
-/*header*/   
-.header-general {
-    width:auto;
+  /*index.html*/
+  /*header*/
+  .header-general {
+    width: auto;
     height: 100%;
-    flex-direction: column;
-
-}
-.header-titulo{
+    flex-direction: column; }
+  .header-titulo {
     display: flex;
-    display: block;
-}
-.menu-inicio {
-    margin-top: 30px;
-}
+    display: block; }
+  .menu-inicio {
+    margin-top: 30px; }
+  /*main index*/
+  .descripcion-principal {
+    flex-direction: column; }
+  /*.descripcion-principal__video {
 
-/*main index*/
-.descripcion-principal {
-flex-direction: column;
-}
-.descripcion-principal__video{
-
-}
-.titulo-articulos {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.biblioteca{
-    height: 150px;
-}
-
-/*bilbioteca.html*/
-/*header*/
-.header-biblioteca {
-flex-direction: column;
-}
-
-/*main*/
-.libros__contenido {
-display: flex;
-flex-direction: column;
-}
-
-/*Hospital.html*/
-/*main*/
-
-.turnos{
-flex-direction: column;
-}
-
-.contenedor-turnos__imagen {
-height: 100px;
-width: 400px; 
-}
-
-.turnos-indice__enlace {
-margin-left: 200px;
-}
+}*/
+  .titulo-articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .biblioteca {
+    height: 150px; }
+  /*bilbioteca.html*/
+  /*header*/
+  .header-biblioteca {
+    flex-direction: column; }
+  /*main*/
+  .libros__contenido {
+    display: flex;
+    flex-direction: column; }
+  /*Hospital.html*/
+  /*main*/
+  .turnos {
+    flex-direction: column; }
+  .contenedor-turnos__imagen {
+    height: 100px;
+    width: 400px; }
+  .turnos-indice__enlace {
+    margin-left: 200px; }
+  /*universidad.html*/
+  /*main*/
+  .novedades {
+    flex-direction: colum; } }

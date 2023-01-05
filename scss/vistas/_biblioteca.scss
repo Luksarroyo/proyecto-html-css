@@ -1,0 +1,99 @@
+/*main biblioteca*/
+.header-biblioteca{
+    background-image: url(../recursos/imagen/hospital.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: $fontWhite;
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    
+    }
+    
+    .libros {
+        margin: 60px;
+        padding: 0 20px;
+    
+        &__contenido {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        &__titulo {
+            color: $fontDarkblur;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+    }
+    
+    .libros
+    /* TARJETAS */
+    .tarjeta {
+        background-color: $fontWhite;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 25px 50px -12px $fontDarkblur;
+        
+        &__enlace {
+            background-color: $fontLightblue;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            color: $fontDarkblur;
+            padding: 15px 0;
+            font-weight: bold;
+        }
+    
+        &__descripcion {
+            height: 50px;
+            margin-bottom: 40px;
+        }
+    
+        &__titulo {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+    
+    .tarjeta__encabezado {
+        position: relative;
+    
+        &-imagen {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .tarjeta-uno{
+        transform:translate(100px);
+        transition: 2s;
+    
+        &:hover {
+            transform: translate(-50px);
+        }
+    }
+    
+    .tarjeta-dos{
+        transform: perspective(200px);
+        transition: 2s;
+    
+        &:hover {
+            transform: translate(-100px);
+        }
+    }
+    
+    .tarjeta-tres {
+        transform: translate(-100px);
+        transition: 2s;
+    
+        &:hover {
+            transform: translate(50px);
+        }
+    }
