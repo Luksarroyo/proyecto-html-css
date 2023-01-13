@@ -1,11 +1,9 @@
 /*main biblioteca*/
 .header-biblioteca{
-    background-image: url(../recursos/imagen/hospital.png);
-    background-repeat: no-repeat;
-    background-position:  center;
     background-color: $fontWhite;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     top: 20px;
     
     }

@@ -1,8 +1,8 @@
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}*/
 
 body{
     font-family: 'Caveat',cursive;
@@ -10,14 +10,18 @@ body{
 }
 /*encabezado general a paginas*/
 .header-general{
-    background-image: url(../recursos/imagen/hospital.png);
-    background-repeat: no-repeat;
-    background-position:  center;
     background-color: $fontWhite;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
     position: sticky;
     padding: 20px;
+}
+
+.header-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-inicio {
@@ -37,6 +41,9 @@ ul li {
     display: inline;
     margin: 0px 10px;
 }
+.burguer{
+    display: none;
+}
 /*titulos generales*/
 h1{
     font-size: 2rem;
@@ -45,10 +52,10 @@ h1{
     margin: 10px 10px;
     animation: ease-in titulo 3s;
 }
-.titulogeneral-hospital{
+/*.titulogeneral-hospital{
     font-size: 2rem;
-    color: whitesmoke;
-    background-color: $fontBlue;
+    color: $fontDarkblur;
+    background-color: $fontWhite;
     margin: 20px 10px;
     animation: ease-in titulo 3s;
 
@@ -60,7 +67,7 @@ h1{
     100%{
         transform: scale(1);
     }
-}
+}*/
 h2{
     font-size: 1rem;
     color: $fontDarkblur;
@@ -70,9 +77,11 @@ h2{
 /*footer general a paginas*/
 
 footer {
+    background-color: $fontWhite;
     display: flex;
     justify-content:space-between;
-    margin-top: 100px;
+    margin-top: 0px;
+    
 }
 ol li{
     text-decoration: none;
@@ -91,7 +100,7 @@ ol li:hover{
     @extend .social;
 }
 
-.redes {
+.contenedor-redes {
     @extend .social;
 
     &__lista {
@@ -117,7 +126,7 @@ ol li:hover{
         width: 160px;
       height: 10px;
       padding: 30px;
-      margin: 20px 0 0 110px;
+      margin: 0px 0px 0px 150px;
       border: 8px solid $fontDarkblur;
       background: $fontWhite;
       display: flex;

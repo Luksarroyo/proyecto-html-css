@@ -77,16 +77,16 @@
 .contenedor-turnos__imagen{
     display: inline-block;
     justify-content: right;
-    height: 200px;
-    width: 500px;
+    /*height: 200px;
+    width: 500px;*/
     
 }
 
-.novedades{
+.hospital-novedades{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 
 }
