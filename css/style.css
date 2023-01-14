@@ -262,6 +262,7 @@ ol li:hover {
   .contenedor-principal__subtitulo {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 50px;
     width: 150px;
     justify-content: center;
     margin-right: 100px;
