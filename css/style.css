@@ -183,7 +183,7 @@ ol li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 20px; }
+  padding: 20px; }
 
 .libros {
   margin: 60px;
@@ -195,10 +195,15 @@ ol li:hover {
     max-width: 1200px;
     margin: 0 auto; }
   .libros__titulo {
+    background-image: url(../../recursos/imagen/bibliotecaparatitulo.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #040480;
     margin-bottom: 40px;
-    text-align: center;
-    font-size: 30px; }
+    font-size: 50px; }
 
 .libros .tarjeta {
   background-color: #f1f5f2;
@@ -320,9 +325,32 @@ ol li:hover {
 /*.carreras{
     margin-left: 100px;
 }*/
-/*novedades-tarjetas*/
 .novedades {
+  display: flex;
+  justify-content: space-between;
   margin-top: 50px; }
+
+/*novedadesDivulgacion*/
+.articuloUniversidad {
+  background-color: #097394;
+  margin-top: 50px;
+  border-radius: 10px; }
+  .articuloUniversidad-titulo {
+    display: flex;
+    justify-content: center;
+    color: #f1f5f2; }
+  .articuloUniversidad-tarjetas {
+    display: flex;
+    justify-content: space-between; }
+    .articuloUniversidad-tarjetas__uno {
+      display: flex;
+      align-items: center; }
+
+.card {
+  background-color: lightblue; }
+  .card-enlace {
+    background-color: #f1f5f2;
+    color: #040480; }
 
 /*video*/
 .video-universidad {

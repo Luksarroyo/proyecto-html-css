@@ -2,10 +2,45 @@
 /*.carreras{
     margin-left: 100px;
 }*/
-/*novedades-tarjetas*/
+
 .novedades{
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
 }
+
+/*novedadesDivulgacion*/
+.articuloUniversidad{
+    background-color: $fontBlue;
+    margin-top: 50px;
+    border-radius: 10px;
+
+    &-titulo{
+        display: flex;
+        justify-content: center;
+        color: $fontWhite;
+    }
+    &-tarjetas{
+        display: flex;
+        justify-content: space-between;
+
+        &__uno{
+            display: flex;
+            align-items: center;
+
+        }
+    }
+}
+
+.card{
+    background-color: $fontLightblue;
+
+    &-enlace{
+        background-color: $fontWhite;
+        color: $fontDarkblur;
+    }
+}
+
 /*video*/
 .video-universidad {
     width: 1000px;
