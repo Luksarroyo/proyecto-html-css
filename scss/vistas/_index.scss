@@ -63,12 +63,14 @@
     }
 }
 
-
 .titulo-digital {
     color:$fontBlue ;
     font-size: 1.5rem;
 }
 
-/*.libro {
-    margin: 0px 0px 0px 200px;
-}*/
+.EnlaceLibros{
+    display: flex;
+    justify-content: center;
+    background-color: $fontLightblue;
+   
+}

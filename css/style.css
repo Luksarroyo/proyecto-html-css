@@ -173,9 +173,11 @@ ol li:hover {
   color: #097394;
   font-size: 1.5rem; }
 
-/*.libro {
-    margin: 0px 0px 0px 200px;
-}*/
+.EnlaceLibros {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue; }
+
 /*biblioteca*/
 /*main biblioteca*/
 .header-biblioteca {
