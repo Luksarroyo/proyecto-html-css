@@ -1,5 +1,4 @@
-## proyecto final curso de desarrollo web coderhouse
+## proyecto final curso de desarrollo web (html-css) coderhouse
 
-## biblioteca hospital de salud
 
 por: Lucas Arroyo
